@@ -20,7 +20,7 @@ This WPF (Windows Presentation Foundation) desktop application, developed using 
 1. **Clone the repository**: Begin by cloning the repository to your local system to acquire all the relevant installation packages and facilitate the local running of the project.
 
     ```
-    git clone https://github.com/xjustride/SzyfrPolibuszaWPF
+    git clone https://github.com/xjustride/SzyfrPolibuszaWPF.git
     ```
 
 2. **Open the Project**: You can open the `.sln` (solution) file using Visual Studio or any other IDE that is well-tailored for .NET 6.0 development, navigating to the solution directory.
