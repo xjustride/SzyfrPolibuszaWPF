@@ -23,8 +23,6 @@ namespace SzyfrPolibuszaWPF
         public MainWindow()
         {
             InitializeComponent();
-
-            
         }
 
         public string Encrypt(string input)
@@ -48,7 +46,6 @@ namespace SzyfrPolibuszaWPF
                     {
                         if (macierz[i, j] == c)
                         {
-                            // Dodajemy 1 do indeksu, aby uniknąć 00 jako wartości szyfru
                             sb.Append($"{i + 1}{j + 1} ");
                             found = true;
                             break;
@@ -56,7 +53,7 @@ namespace SzyfrPolibuszaWPF
                     }
                     if (found) break;
                 }
-                if (!found) sb.Append(c); // Jeśli znak nie został znaleziony, dodajemy go bez zmian
+                if (!found) sb.Append(c); 
             }
             return sb.ToString().Trim();
         }
@@ -87,7 +84,7 @@ namespace SzyfrPolibuszaWPF
                 }
                 else
                 {
-                    sb.Append(part); // Jeśli część nie jest zakodowaną wartością, dodajemy ją bez zmian
+                    sb.Append(part); 
                 }
             }
             return sb.ToString();
